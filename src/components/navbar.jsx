@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const Navbar = () => {
   const navStyle = {
     display: "flex",
@@ -45,11 +46,21 @@ const Navbar = () => {
     transition: "color 0.3s",
   };
 
+
+  const handleScroll = () => {
+    document.getElementById("contact-Us").scrollIntoView({ behavior: "smooth" });
+  };
+
+
   return (
     <nav style={navStyle}>
-      <div style={logoStyle}>Praveshan</div>
+      <div style={logoStyle}><a href="/" style={linkStyle} > <h1>Praveshan</h1></a> </div>
       <div style={menuStyle}>
-        <span style={linkStyle}>Contact Us</span> 
+      <Link to="/contactUs">  <button  style={buttonStyle}>
+            Contact Us
+          </button>
+          </Link>
+        
         <Link to="/cities">
           <button
             style={buttonStyle}

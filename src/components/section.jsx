@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const pricingOptions = [
   {
@@ -80,7 +81,12 @@ const Services = () => {
     cursor: "pointer",
     fontSize: "1rem",
   };
+  
+  const navigate = useNavigate();
 
+  const handleLearnMore = () => {
+    navigate("/ResidentalMoving");
+  };
   return (
     <div style={containerStyle}>
       {pricingOptions.map((option, index) => (
@@ -93,7 +99,7 @@ const Services = () => {
                 <li key={idx} style={featureStyle}>{feature}</li>
               ))}
             </ul>
-            <button style={buttonStyle}>Learn More</button>
+             <button   onClick={handleLearnMore} style={buttonStyle}>Learn More</button>  
           </div>
         </div>
       ))}
@@ -102,3 +108,4 @@ const Services = () => {
 };
 
 export default Services;
+ 

@@ -1,64 +1,55 @@
 import React from "react";
 
-const Footer = () => {
-    const footerStyle = {
-      backgroundColor: "#f8f9fa",
-      padding: "20px",
-      display: "flex",
-      justifyContent: "space-between",
-      flexWrap: "wrap",
-      borderTop: "1px solid #ddd",
-    };
-  
-    const sectionStyle = {
-      flex: "1 1 200px",
-      margin: "10px",
-    };
-  
-    const headingStyle = {
-      fontSize: "1.2rem",
-      fontWeight: "bold",
-      marginBottom: "10px",
-    };
-  
-    const linkStyle = {
-      color: "#007bff",
-      textDecoration: "none",
-      display: "block",
-      marginBottom: "6px",
-    };
-  
-    const copyrightStyle = {
-      flexBasis: "100%",
-      textAlign: "center",
-      marginTop: "20px",
-      fontSize: "0.9rem",
-      color: "#6c757d",
-    };
-  
-    return (
-      <footer style={footerStyle}>
-        <div style={sectionStyle}>
-          <h4 style={headingStyle}>Products</h4>
-          <a href="#" style={linkStyle}>Residential Moving</a>
-          <a href="#" style={linkStyle}>Commercial Moving</a>
-          <a href="#" style={linkStyle}>Packing Services</a>
-        </div>
-        <div style={sectionStyle}>
-          <h4 style={headingStyle}>Contact Us</h4>
-          <p>Phone: (123) 456-7890</p>
-          <p>Email: contact@prevashanmoving.com</p>
-          <p>Address: 123 Moving Lane, Movers City</p>
-        </div>
-        <div style={sectionStyle}>
-          <h4 style={headingStyle}>About</h4>
-          <a href="#" style={linkStyle}>Our Team</a>
-          <a href="#" style={linkStyle}>Careers</a>
-          <a href="#" style={linkStyle}>FAQs</a>
-        </div>
-        <div style={copyrightStyle}>
-          © 2025 Prevashan Moving and Out Agency. All rights reserved.
-        </div>
-      </footer>
-    );
+const ContactUs = () => {
+  const containerStyle = {
+    maxWidth: "600px",
+    margin: "0 auto",
+    padding: "24px",
+    borderRadius: "16px",
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+    backgroundColor: "#f9f9f9",
+    textAlign: "center",
   };
+
+  const titleStyle = {
+    fontSize: "2rem",
+    fontWeight: "bold",
+    marginBottom: "16px",
+    color: "#333",
+  };
+
+  const infoStyle = {
+    fontSize: "1.1rem",
+    marginBottom: "12px",
+    color: "#4a4a4a",
+  };
+
+  const linkStyle = {
+    color: "#007bff",
+    textDecoration: "none",
+    fontWeight: "bold",
+  };
+
+  return (
+    <div style={containerStyle}>
+      <h2 style={titleStyle}>Contact Us</h2>
+      <p style={infoStyle}>
+        <strong>Phone:</strong>{" "}
+        <a href="tel:+919575702649" style={linkStyle}>
+          +91 9575702649
+        </a>
+      </p>
+      <p style={infoStyle}>
+        <strong>Email:</strong>{" "}
+        <a href="mailto:contact@praveshanmoving.com" style={linkStyle}>
+          contact@praveshanmoving.com
+        </a>
+      </p>
+      <p style={infoStyle}>
+        <strong>Address:</strong> Maple Tree, Jail Road, Bhopal
+      </p>
+    </div>
+  );
+};
+
+export default ContactUs;

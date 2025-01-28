@@ -55,7 +55,8 @@ const ExpandableMenu = () => {
 
       {showMenu && (
         <div style={menuStyles.dropdown}>
-          {['Section 1', 'Section 2', 'Section 3'].map((section, index) => (
+          {['Bhopal ',
+           'Gwalior', ' Indore'].map((section, index) => (
             <div
               key={index}
               style={{ position: 'relative' }}
@@ -71,7 +72,7 @@ const ExpandableMenu = () => {
               </button>
               {activeSection === index && (
                 <div style={menuStyles.section}>
-                  <p>Content for {section}</p>
+                  <p> {section}</p>
                 </div>
               )}
             </div>
