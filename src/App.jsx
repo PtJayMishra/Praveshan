@@ -63,6 +63,15 @@
              </Layout>
            }
          />
+        
+       <Route
+           path="/login"
+           element={
+             <Layout>
+               < Auth />
+             </Layout>
+           }
+         />
        </Routes>
      </Router>
    );

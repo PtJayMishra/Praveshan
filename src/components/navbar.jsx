@@ -76,7 +76,8 @@ const Navbar = () => {
             Cities
           </button>
         </Link>
-        <button 
+
+        <Link to="/login"><button 
           style={buttonStyle} 
           onMouseOver={(e) => {
             e.target.style.backgroundColor = buttonHoverStyle.backgroundColor;
@@ -88,7 +89,8 @@ const Navbar = () => {
           }}
         >
           Login
-        </button>
+        </button></Link>
+        
       </div>
     </nav>
   );
